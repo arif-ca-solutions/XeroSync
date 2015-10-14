@@ -2,7 +2,7 @@
 /*
 Plugin Name: Xero Sync
 Plugin URI: 
-Description: a plugin for xero invoice in wordpress
+Description: Plugin to add xero invoice in WPeCommerse
 Version: 1.0.0
 Author: Vbridge
 */
@@ -26,8 +26,9 @@ function xero_admin_actions() // Function to create left menu on wp-admin
 function invoice_history() // function to display invoice history
 {
 	global $wpdb; 
-	wp_enqueue_style( 'date_picker-style', "//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" ); // add datepicker style
-	wp_enqueue_script( 'date_picker', '//code.jquery.com/ui/1.11.4/jquery-ui.js', array(), '1.0.0', true ); // add datepicker jquery files
+	//plugins_url(). '/xero-invoice/css/jquery-ui.css'
+	wp_enqueue_style( 'date_picker-style', plugins_url(). '/xero-invoice/css/jquery-ui.css' ); // add datepicker style
+	wp_enqueue_script( 'date_picker', plugins_url(). '/xero-invoice/js/jquery-ui.js', array(), '1.0.0', true ); // add datepicker jquery files
 	?>
 	<script>
 	jQuery(document).ready(function(jQuery) {
