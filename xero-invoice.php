@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Xero Sync
+Plugin Name: Invoice Sync for Xero and WPeCommerse
 Plugin URI: 
 Description: Plugin to add xero invoice in WPeCommerse
 Version: 1.0.0
@@ -57,7 +57,7 @@ function invoice_history() // function to display invoice history
 	$end_date_for_sel = date('Y-m-d', strtotime($end_date. ' + 1 days'));
 	//echo "SELECT * FROM wp_xero_history WHERE `purchased_date` >= '$start_date' AND `purchased_date` <= '$end_date_for_sel' ORDER BY id DESC";
 	?>
-	<h3>Xero Sync History</h3>
+	<h3>Invoice Sync History</h3>
 	<p style="font-size: 16px;">All the invoices that were pushed to Xero are listed below</p>
 	<form action="<?=get_site_url().'/wp-admin/admin.php'?>" method="get" class="history_form">
 		<input type="hidden" name="page" value="xero-invoice/invoice_history.php" />
