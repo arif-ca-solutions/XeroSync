@@ -1,5 +1,5 @@
 # XeroSync
-Plugin Name: Xero Sync 
+Plugin Name: Invoice Sync for Xero and WPeCommerse
 Description: Plugin to add xero invoice in WPeCommerse
 Version: 1.0.0
 Author: Vbridge
