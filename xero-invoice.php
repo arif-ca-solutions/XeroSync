@@ -629,4 +629,4 @@ function plugin_help()
 		</p>
 	</div>
 	<?php
-}
+} ?>
